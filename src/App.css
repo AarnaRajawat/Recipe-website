@@ -1,0 +1,494 @@
+
+  body{
+    background-color: #f1d0d0; /* Warm, food-themed background color */
+  }
+  
+  /* navbar are started */
+
+
+  /* Navbar Container */
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  background-color: #4a4a4a; /* Medium-dark color that works well with baby pink */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+/* Left Section: Title */
+.Nav .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.no-space {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  color: #ff5722;
+}
+
+/* Logo Text Colors */
+.black-text {
+  color: #ffffff; /* White text to contrast against the dark background */
+}
+
+.white-text {
+  color: #ff5722; /* Accent color for the "Recipe" part */
+}
+
+/* Center Section: Search Bar */
+/* Big and Bold Search Bar */
+.search {
+ width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.search form {
+  width: 100%;
+  max-width: 500px; 
+}
+
+.search input[type='text'] {
+  width: 100%;
+  padding: 7px 10px; 
+  font-size: 18px;
+  border: 3px solid #ea9176;
+  outline: none;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  font-weight: bold; 
+}
+
+.search input[type='text']::placeholder {
+  font-weight: normal;
+  color: #888; 
+}
+
+.search input[type='text']:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.3);
+}
+
+
+
+.Nav .search input[type='text']:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 8px rgba(255, 87, 34, 0.2);
+}
+
+
+.Nav .right {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.Nav .right div {
+  padding: 8px 12px;
+  color: #ff5722;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.Nav .right div:hover {
+  background-color: #ffe0b2;
+  color: #d84315;
+  transform: scale(1.1);
+}
+
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f1d0d0; 
+}
+
+
+
+
+
+
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  background-color: #f1d0d0; /* Warm, food-themed background color */
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 0%;
+}
+
+/* Carousel slider container styling */
+.slider-container {
+  width: 90%; /* Make it responsive */
+  max-width: 1200px;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Individual slide styling */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* Image styling */
+.slider img {
+  width: 100%; /* Adjust width for responsiveness */
+  object-fit: cover;
+  
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for images */
+.slider img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+
+
+/* Recipe .slider */
+
+
+
+.link{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
+
+
+
+/* Container for all cards */
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f1d0d0; /* Warm, food-themed background color */
+}
+
+/* Link styling */
+.Clink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 250px; /* Adjust as needed */
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.Clink:hover {
+  transform: translateX(-5px);
+}
+
+/* Card styling */
+.tool {
+  display: flex;
+  flex-direction: column;
+ height: inherit;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.tool:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.imgn img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.imgn img:hover {
+  transform: scale(1.05);
+}
+
+/* Dish name styling */
+.tool h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* for tranding page */
+
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f1d0d0; /* Warm, food-themed background color */
+  
+}
+/* for tranding food */
+
+/* Container styling */
+.tol {
+  text-align: center;
+  margin: 20px 0;
+  background-color: rgb(247, 238, 240);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+
+/* H1 styling */
+.tol h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.notFound{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+/* Underline effect */
+
+/* mobile app media quarries */
+
+/* General Styling for Mobile */
+
+@media (max-width: 768px) {
+  /* Navbar adjustments for mobile */
+  .Nav {
+    flex-direction: column;
+    padding: 20px;
+    background-color: #4E342E; /* Dark background for a cleaner look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  }
+
+  /* Center logo and title */
+  .Nav .left,
+  .search,
+  .right {
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  /* Logo/title adjustments */
+  .Nav .left h1 {
+    font-size: 24px;
+    color: #FF7043; /* Vibrant color for mobile */
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Navigation links container */
+  .Nav .right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  /* Navigation link styling */
+  .Nav .right div {
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #FFCCBC; /* Light background for contrast */
+    color: #4E342E;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Hover effect for nav links */
+  .Nav .right div:hover {
+    background-color: #FF7043;
+    color: #FFFFFF;
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+
+  /* Search bar adjustments for mobile */
+  .search {
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  .search input[type='text'] {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 2px solid #FF7043;
+  }
+}
+
+
+@media (max-width: 768px) {
+  
+  /* Main container adjustments */
+  .Content {
+    flex-direction: column;
+    height: 33vh; /* Adjust to fit content */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+   
+  }
+
+  /* Carousel image adjustments */
+  .slider img {
+    height: 100%; /* Reduce image height for mobile */
+    border-radius: 8px;
+    overflow: hidden;
+    
+
+    
+  }
+
+  /* Card container adjustments */
+  .box, .box1 {
+    gap: 10px; /* Reduce gap between cards */
+    padding: 10px;
+  }
+
+  /* Two cards per row in mobile */
+  .Clink {
+    width: 45%; /* Two cards per row */
+    margin: 5px 0;
+  }
+
+  /* Tool card adjustments */
+  .tool {
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Dish name font adjustments */
+  .tool h2 {
+    font-size: 1em;
+  }
+
+ 
+  .slider-container {
+    width: 100%;
+    max-width: 100%;
+  
+   
+    height: fit-content;
+  
+  }
+
+  /* Trending Section */
+  .tol {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f5e5e5; /* Lighter background */
+  }
+
+  .tol h1 {
+    font-size: 1.8em; /* Reduce title size */
+    letter-spacing: 1px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  
+  /* Content adjustments */
+  .Content {
+    padding: 10px;
+ 
+  }
+  .slider-container {
+    width: 100%;
+    height: auto; 
+    overflow: visible; 
+}
+  /* Carousel image adjustments */
+  .slider img {
+    height: 30vh;
+    width: 100%;
+  }
+
+  /* Two cards per row in mobile */
+  .Clink {
+    width: 48%;
+  }
+
+  /* Smaller tool card padding */
+  .tool {
+    padding: 8px;
+  }
+
+  /* Text font adjustments */
+  .tool h2 {
+    font-size: 0.9em;
+  }
+
+  /* Trending Section Title */
+  .tol h1 {
+    font-size: 1.5em;
+  }
+
+  /* Navbar adjustments for very small screens */
+  .Nav .right div {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+

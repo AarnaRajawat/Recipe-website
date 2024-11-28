@@ -1,0 +1,61 @@
+.shimmerTool {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .boxl {
+    width: 300px;
+    background: #f0f0f0;
+    height: 300px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+  }
+  
+  /* Media Queries */
+  
+  /* For medium screens (up to 768px) */
+  @media (max-width: 768px) {
+    .shimmerTool {
+      gap: 20px; /* Reduce the gap between items */
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .boxl {
+      width: calc(50% - 15px); /* Ensure two items in one row with space for gaps */
+      height: 200px; /* Reduce height to fit smaller screens */
+      margin-left: 0; /* Align evenly in rows */
+    }
+  }
+  
+  /* For small screens (up to 480px) */
+  @media (max-width: 480px) {
+    .shimmerTool {
+      flex-direction: column; /* Stack items vertically */
+      /* Smaller spacing between items */
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .boxl {
+      width: 100%; /* Full width for mobile screens */
+      height: 200px; /* Let the height adjust automatically */
+      margin-left: 0;
+      padding: 12px;
+      border-radius: 8px;
+     border: 1 px solid gray;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Remove unnecessary margin */
+    }
+  }
+  
+

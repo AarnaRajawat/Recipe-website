@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.Contino {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: auto;
+  min-height: 83vh;
+}
+
+/* Title Styling */
+.Contino h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Flex Container for Image and Buttons */
+.Flok {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Image Container */
+.imgah {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imgah img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imgah img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Container */
+.buton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.btni{
+  display: flex;
+  gap: 20px;
+}
+
+.buton .btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.buton .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Contino h1 {
+      font-size: 2rem;
+  }
+
+  .Flok {
+      flex-direction: column;
+  }
+
+  .imgah img {
+      max-width: 80%;
+  }
+
+  .buton {
+      flex-direction: column;
+  }
+
+  .buton .btn {
+      padding: 10px 24px;
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Contino h1 {
+      font-size: 1.5rem;
+  }
+
+  .imgah img {
+      max-width: 100%;
+  }
+
+  .buton .btn {
+      padding: 8px 20px;
+      font-size: 0.8rem;
+  }
+}
